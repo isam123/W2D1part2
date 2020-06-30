@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<link href="main.css" rel="stylesheet">    
+<title>Regex Form</title>
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="row cust-row align-items-center justify-content-center">
+        <div class="col-sm-6 text-center text-white">
+          <h1 class=" ">FormSite Demo</h1>
+          <p><i> starting from 1991</i></p>
+        </div>
+    </div>
+    <div class="row mt-5 justify-content-center">
+        <div class="col-sm-5 ">
+        <form method="Post" action="/a">  
+            <label> First Email : </label>
+            <input required type="email" class="form-control mb-3" >
+            <p class="d-block  font-italic ">we will never share your email</p>
+            <label> Password : </label>
+            <input id="ids" min="8"  class="form-control  mb-3" type="password" required  pattern="^(?=[a-z]+[A-Z]+|[A-Z]+[a-z]+)[a-zA-Z]{9,}" title="Please submit a password with a valid"  >
+            <label> URL : </label>
+            <input id="ids" min="8" 
+             class="form-control  mb-3" type="text" required 
+              pattern="https?://.+" title="Please enter a URL"  >
+            <input type="checkbox" class=""  title=""Pleae/>  Check me out <br>
+     <input type="submit" onclick="validateSubmision(event)" class="btn secondary-color text-white" value="Submit"/>
+        </form>
+        </div>
+    </div>
+    </div>
+    <script src="main.js"> </script>
+</body>
+</html>

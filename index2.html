@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<link href="main.css" rel="stylesheet">    
+<title>Home</title>
+<div class="container-fluid">
+    <div class="row blue">
+        <div class="col-sm-6  text-white">
+            <ul class="list-inline  p-3">
+                    <li class="list-inline-item pr-sm-5 border-right border-white"><h4 class="">MUM Golden Dom MArket :: SRM </h4></li>
+                    <li class="list-inline-item px-sm-5 border-right border-white">Products</li>
+                    <li class="list-inline-item px-sm-5 border-right border-white">Suppliers</li>
+            </ul>        
+        </div>
+        <div class="col-sm-6  text-end text-white" style="text-align: end;">
+            <label>Hello User!</label>
+            <button class="btn white black-text" >SIgn up</button>
+        </div>
+
+    </div>
+
+    <div class="row mt-5 justify-content-center">
+       
+        <div class="col-sm-4">
+<form class="" method="GET" action="index.html">
+            <h3>Product Number</h3>
+            <label> Number : </label>
+            <input required type="text" class="form-control mb-3" >
+
+            <label> Name : </label>
+            <input pattern="[a-zA-Z]{2,15}" required type="text" class="form-control mb-3" >
+
+            <label>Unit Price : </label>
+            <input required type="number" class="form-control mb-3" >
+
+        </div>
+
+          
+
+        <div class="col-sm-4">
+            <h3>Product Number</h3>
+            <label> Quantity in stock </label>
+            <input required type="number" class="form-control mb-3" >
+
+            <label> Supplier : </label>
+            <select class="form-control mb-3" >
+               <option >Arc</option>
+               <option >Hiza</option>
+               <option >der</option>
+            </select>
+
+            <label>Unit Price : </label>
+            <input required type="date" class="form-control mb-3" >
+            <div class="row">
+            <div >
+                <button type="reset" class="btn btn-outline-primary btn-sm">Reset</button>
+                <button type="button" class="btn btn-outline-danger btn-sm">Cancel</button>
+                <button type="submit" class="btn btn-outline-primary btn-sm">Add product</button>
+            </div>
+            </div>
+
+        </div>
+    </form>
+    </div>
+
+</div>
+</head>
+<body>
+    
+</body>
+</html>
